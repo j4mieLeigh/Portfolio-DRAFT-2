@@ -1,14 +1,13 @@
 :root {
   --branding-color: #c6e5df;
-  --seconary-color: #c6b2c1;
-  --accent-color: #c6b2c1;
+  --secondary-color: #c6b2c1;
   --text-color: #223843;
   --title-font-family: "Playfair Display", serif;
   --description-font-family: "Poppins", sans-serif;
 }
 
-.container {
-  max-width: 100%;
+body {
+  font-family: var(--description-font-family);
 }
 
 .hero {
@@ -25,7 +24,6 @@ h1 {
 
 h2 {
   color: var(--text-color);
-  font-family: var(--description-font-family);
   font-size: 36px;
   font-weight: bold;
   margin: 0;
@@ -33,17 +31,64 @@ h2 {
 
 h3 {
   color: var(--text-color);
-  font-family: var(--description-font-family);
   font-size: 24px;
   line-height: 2;
 }
 
 .btn-branding {
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
   color: white;
-  font-family: var(--description-font-family);
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
+}
+
+.btn-branding-outline {
+  border: 2px solid var(--secondary-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 20px;
+}
+
+.project-one,
+.project-two,
+.project-three {
+  padding: 120px 60px;
+}
+
+.project-title {
+  font-family: var(--title-font-family);
+  font-size: 48px;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.project-btn {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .project-one,
+  .project-two,
+  .project-three {
+    padding: 50px 50px;
+  }
+
+  .project-title {
+    font-size: 36px;
+  }
 }
