@@ -35,6 +35,25 @@ h3 {
   line-height: 2;
 }
 
+.recent-projects {
+  font-size: 36px;
+}
+
+.highlight {
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(247, 213, 217) 20.2%,
+    rgb(251, 227, 229) 68.2%,
+    rgb(255, 247, 247) 99.2%
+  );
+  padding: 10px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
 .btn-branding {
   border-radius: 4px;
   background-color: var(--secondary-color);
@@ -44,11 +63,19 @@ h3 {
   padding: 12px 20px;
 }
 
+.btn-branding:hover {
+  color: var(--text-color);
+}
+
 .btn-branding-outline {
   border: 2px solid var(--secondary-color);
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
+}
+
+.btn-branding-outline:hover {
+  color: #223843a5;
 }
 
 .project-one,
@@ -68,27 +95,50 @@ h3 {
   opacity: 0.8;
 }
 
-.project-btn {
-  display: block;
-}
-
-@media (max-width: 800px) {
+@media (max-width: 1023px) {
   h1 {
     font-size: 48px;
     line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 
   .hero {
     padding: 50px 20px;
   }
 
+  .recent-projects {
+    font-size: 24px;
+  }
+  .container {
+    margin-top: 50px;
+  }
+
+  .row {
+    margin: 20px;
+  }
+
   .project-one,
   .project-two,
   .project-three {
-    padding: 50px 50px;
+    padding: 10px 10px;
   }
 
   .project-title {
-    font-size: 36px;
+    font-size: 28px;
+  }
+
+  .project-btn {
+    display: block;
+  }
+
+  .container img {
+    display: none;
   }
 }
