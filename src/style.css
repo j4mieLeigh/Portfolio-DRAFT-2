@@ -16,6 +16,28 @@ body {
   text-align: center;
 }
 
+.about-hero {
+  padding: 100px 20px;
+}
+
+.about-hero-content {
+  margin: 30px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.about-hero h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about-hero p {
+  line-height: 30px;
+}
+
 h1 {
   color: var(--text-color);
   font-family: var(--title-font-family);
@@ -138,7 +160,7 @@ h3 {
     display: block;
   }
 
-  .container img {
+  .preview {
     display: none;
   }
 }
