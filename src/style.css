@@ -127,11 +127,11 @@ h3 {
 
 /* Projects Page */
 
-.projects-page {
+.page {
   padding: 60px 30px;
 }
 
-.projects-header {
+.header {
   font-size: 36px;
   line-height: 80px;
   margin-bottom: 75px;
@@ -146,6 +146,27 @@ h3 {
 .project-label {
   font-size: 24px;
   margin: 20px 0 10px 0;
+}
+
+/* Contact Page */
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  margin: 30px 10px;
 }
 
 /* Media Query */
