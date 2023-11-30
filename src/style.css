@@ -67,6 +67,7 @@ h3 {
 
 .btn-branding:hover {
   color: var(--text-color);
+  transition: all 200ms ease-in-out;
 }
 
 .btn-branding-outline {
@@ -78,6 +79,7 @@ h3 {
 
 .btn-branding-outline:hover {
   color: #223843a5;
+  transition: all 200ms ease-in-out;
 }
 
 .project-one,
@@ -158,6 +160,7 @@ a {
 a:hover {
   color: var(--text-color);
   opacity: 0.7;
+  transition: all 200ms ease-in-out;
 }
 
 .icons {
@@ -167,6 +170,34 @@ a:hover {
 
 i {
   margin: 30px 10px;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+  padding: 10px 5px;
+}
+
+.homepage-nav-bar {
+  background-color: var(--branding-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  line-height: 30px;
+  padding: 0 15px;
+}
+
+nav li.active a {
+  font-weight: bold;
 }
 
 /* Media Query */
@@ -238,5 +269,13 @@ i {
   .project-label,
   .project-description {
     text-align: center;
+  }
+
+  .nav-name {
+    display: none;
+  }
+
+  nav ul {
+    justify-content: center;
   }
 }
