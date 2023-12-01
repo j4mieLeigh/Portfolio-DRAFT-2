@@ -37,6 +37,12 @@ h3 {
   line-height: 2;
 }
 
+h4 {
+  color: var(--text-color);
+  font-family: var(--title-font-family);
+  font-size: 36px;
+}
+
 .recent-projects {
   font-size: 36px;
 }
@@ -168,8 +174,29 @@ a:hover {
   justify-content: center;
 }
 
-i {
-  margin: 30px 10px;
+h3 i {
+  color: var(--secondary-color);
+  margin: 0px 30px;
+}
+
+.github-icon {
+  margin-left: -77px;
+}
+
+.linkedin-icon {
+  margin-left: -4px;
+}
+
+.email-label {
+  padding: 10px 0;
+}
+
+.github-label {
+  padding: 10px 0;
+}
+
+.linkedin-label {
+  padding: 10px 0;
 }
 
 /* Navigation Bar */
@@ -193,19 +220,51 @@ nav ul {
 nav li {
   display: inline;
   line-height: 30px;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 nav li.active a {
   font-weight: bold;
 }
 
+/* Footer */
+
+footer {
+  margin-top: 50px;
+}
+
+.homepage-footer {
+  margin-top: 150px;
+}
+
+.contact-footer {
+  margin-top: 0px;
+}
+
+footer .contact-box {
+  background-color: var(--branding-color);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 30px 225px;
+}
+
+footer .btn {
+  margin-top: 15px;
+}
+
+i {
+  color: var(--secondary-color);
+  margin: 30px 10px;
+}
+
 /* Media Query */
 
 @media (max-width: 1023px) {
   h1 {
-    font-size: 42px;
+    font-size: 28px !important;
     line-height: 1.5;
+    text-align: center;
   }
 
   h2 {
@@ -214,6 +273,7 @@ nav li.active a {
 
   h3 {
     font-size: 20px;
+    text-align: center;
   }
 
   .homepage-hero {
@@ -226,6 +286,14 @@ nav li.active a {
 
   .homepage-grid {
     margin-top: 50px;
+  }
+
+  .homepage-footer {
+    margin-top: 60px;
+  }
+
+  .projects-footer {
+    margin-top: 0;
   }
 
   .row {
@@ -277,5 +345,27 @@ nav li.active a {
 
   nav ul {
     justify-content: center;
+  }
+
+  nav li {
+    font-size: 12px;
+  }
+
+  .contact-box {
+    display: none !important;
+  }
+
+  .contact-info h3 {
+    text-align: start !important;
+  }
+
+  .contact-icon {
+    margin: 0;
+    text-align: start !important;
+  }
+
+  .contact-label {
+    font-size: 12px;
+    text-align: start !important;
   }
 }
