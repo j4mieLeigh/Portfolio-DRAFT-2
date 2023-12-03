@@ -105,6 +105,14 @@ h4 {
   opacity: 0.8;
 }
 
+.coded-by {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  margin-top: 30px;
+  opacity: 0.8;
+  text-align: center;
+}
+
 /* About Page */
 
 .about-hero {
