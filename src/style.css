@@ -91,7 +91,7 @@ h4 {
 .project-one,
 .project-two,
 .project-three {
-  padding: 120px 60px;
+  padding: 50px 60px;
 }
 
 .project-title {
@@ -103,6 +103,10 @@ h4 {
   font-size: 16px;
   line-height: 1.7;
   opacity: 0.8;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
 
 .coded-by {
@@ -119,7 +123,7 @@ h4 {
 }
 
 .about-hero-content {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .about-hero h1 {
@@ -143,7 +147,7 @@ h4 {
 /* Projects Page */
 
 .page {
-  padding: 60px 30px;
+  padding: 60px 30px 30px 30px;
 }
 
 .header {
@@ -297,7 +301,7 @@ i {
   }
 
   .homepage-hero {
-    padding: 50px 20px;
+    padding: 75px 20px;
   }
 
   .recent-projects {
@@ -323,7 +327,7 @@ i {
   .project-one,
   .project-two,
   .project-three {
-    padding: 10px 10px;
+    padding: 15px 10px;
   }
 
   .project-title {
@@ -394,5 +398,6 @@ i {
 
   .coded-by {
     font-size: 10px;
+    padding: 8px;
   }
 }
