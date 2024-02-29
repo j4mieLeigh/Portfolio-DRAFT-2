@@ -116,8 +116,6 @@ h4 {
   text-align: center;
 }
 
-/* About Page */
-
 .about-hero {
   padding: 30px 50px;
 }
@@ -153,7 +151,6 @@ h4 {
 .header {
   font-size: 36px;
   line-height: 80px;
-  margin-bottom: 75px;
 }
 
 .projects-image {
