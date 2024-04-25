@@ -121,6 +121,7 @@ h4 {
 }
 
 .about-hero-content {
+  box-sizing: border-box;
   margin-top: 75px;
 }
 
@@ -139,20 +140,23 @@ h4 {
 }
 
 .about-image {
+  margin-left: 60px;
   max-width: 40%;
   position: relative;
+  z-index: -2;
 }
 
 .about-image::before {
-  border: 0.25rem solid var(--secondary-color);
+  border: 4px solid var(--secondary-color);
   border-radius: 6px;
+  box-sizing: border-box;
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 40px;
-  right: -30px;
-  z-index: -1;
+  top: 25px;
+  right: -50px;
+  z-index: 0;
 }
 
 /* Projects Page */
