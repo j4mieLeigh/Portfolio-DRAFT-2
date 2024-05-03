@@ -140,22 +140,25 @@ h4 {
 }
 
 .about-image {
-  margin-left: 60px;
-  max-width: 40%;
+  border-radius: 6px;
+  object-fit: cover;
   position: relative;
+  margin-left: 60px;
+  width: 40%;
   z-index: -2;
 }
 
-.about-image::before {
+.about-image::after {
   border: 4px solid var(--secondary-color);
   border-radius: 6px;
   box-sizing: border-box;
-  content: "";
+  content: " ";
   position: absolute;
-  height: 100%;
   width: 100%;
-  top: 25px;
-  right: -50px;
+  height: 80%;
+  top: 15px;
+  left: 25px;
+  transform: translate3d(5px, 5px, 0);
   z-index: 0;
 }
 
@@ -299,13 +302,13 @@ i {
 
 @media (max-width: 1023px) {
   h1 {
-    font-size: 28px !important;
+    font-size: 36px !important;
     line-height: 1.5;
     text-align: center;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 24px;
     text-align: center !important;
   }
 
@@ -314,8 +317,22 @@ i {
     text-align: center;
   }
 
+  .signature-emoji {
+    display: none;
+  }
+
   .homepage-hero {
     padding: 75px 20px;
+  }
+
+  .about-image {
+    margin: 60px auto 15px auto;
+    width: 75vw;
+    z-index: -2;
+  }
+
+  .about-image::after {
+    display: none;
   }
 
   .recent-projects {
@@ -362,10 +379,6 @@ i {
 
   .about-hero-content {
     margin-top: 10px;
-  }
-
-  .about-image {
-    padding: 15px;
   }
 
   .projects-image {
